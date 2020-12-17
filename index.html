@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/doctor.css">
     <title>小慕医生</title>
     <meta name="Keywords" content="美容,减脂,塑性">
     <meta name="Description" content="责任,科学,严谨">
@@ -12,47 +13,54 @@
 <body>
     <!-- 头部 -->
     <header>
-        <!-- logo -->
-        <div class="logo">
-            <h1>小慕医生</h1>
-        </div>
-        <!-- 网页功能区 -->
-        <div class="tool">
-            <div class="r1">
-                <img src="images/tel.png" alt="电话">
-                <span>12345679-0000</span>
-                <a href=""><img src="images/english_icon.png" alt="英文"></a>
-                <a href=""><img src="images/chinese_icon.png" alt="中文"></a>
+        <!-- 作为浮动元素的父元素 -->
+        <div class="header-top">
+            <!-- logo -->
+            <div class="logo">
+                <h1>小慕医生</h1>
             </div>
-            <div class="r2">
-                <input type="search" placeholder="找医生/科室..">
-                <button><img src="images/search.png" alt="搜索"></button>
+            <!-- 网页功能区 -->
+            <div class="tool">
+                <div class="r1">
+                    <img class="tel" src="images/tel.png" alt="电话">
+                    <span class="telNumber">12345679-0000</span>
+                    <a href=""><img class="english_icon icon" src="images/english_icon.png" alt="英文"></a>
+                    <a href=""><img class="chinese_icon icon" src="images/chinese_icon.png" alt="中文"></a>
+                </div>
+                <div class="r2">
+                    <input type="search" placeholder="找医生/科室..">
+                    <button><img src="images/search.png" alt="搜索"></button>
+                </div>
             </div>
         </div>
         <!-- 网页导航条 -->
         <nav class="main-nav">
             <ul>
-                <li>页首</li>
-                <li>医院概况</li>
-                <li>医院动态</li>
-                <li>专家学科</li>
-                <li>服务指南</li>
-                <li>医院文化</li>
-                <li>信息公开</li>
-                <li>互动交谈</li>
+                <li class="cur"><a href="####">页首</a></li>
+                <li><a href="####">医院概况</a></li>
+                <li><a href="####">医院动态</a></li>
+                <li><a href="####">专家学科</a></li>
+                <li><a href="####">服务指南</a></li>
+                <li><a href="####">医院文化</a></li>
+                <li><a href="####">信息公开</a></li>
+                <li><a href="####">互动交谈</a></li>
             </ul>
         </nav>
     </header>
     <!-- banner -->
     <section class="banner">
-        <img src="images/banner.png" alt="">
-        <h2>责任, 科学, 严谨</h2>
-        <ol>
+        <img class="banner-img" src="images/banner.png" alt="">
+        <div class="center">
+            <h2>责任，科学，严谨</h2>
+            <a class="left-btn center-btn" href="####">&lt;</a>
+            <a class="right-btn center-btn" href="####">&gt;</a>
+        </div>
+        <ul>
+            <li class="cur"></li>
             <li></li>
             <li></li>
             <li></li>
-            <li></li>
-        </ol>
+        </ul>
     </section>
     <!-- 主体 -->
     <section class="content">
@@ -105,18 +113,18 @@
                     <div class="hot-news">
                         <a href="">
                             <img src="images/news_pic.png" alt="">
-                            <div>全国首届健康预防与商业医疗保险论坛”在北京医院举办</div>
+                            <div class="new-title">全国首届健康预防与商业医疗保险论坛”在北京医院举办</div>
                         </a>
                     </div>
                     <ul>
-                        <li><a href="">年度医疗机构用血自查评分表和科室基本信息表</a></li>
-                        <li><a href="">关于上报北京市医疗机构临床用血信息的通知</a></li>
-                        <li><a href="">北京医院输血科通过验收并获批开展“临床基…</a></li>
-                        <li><a href="">国家药品监督管理局关于修订都梁软胶囊非处…</a></li>
-                        <li><a href="">关于将多拉司琼注射剂等药品纳入本市基本医…</a></li>
-                        <li><a href="">关于调整完善本市基本医疗保险门诊特殊疾病…</a></li>
-                        <li><a href="">广东省药学会：关于印发《超药品说明书用药…</a></li>
-                        <li><a href="">人力资源社会保障部关于将36种药品纳入国家…</a></li>
+                        <li><a href="">年度医疗机构用血自查评分表和科室基本信息表</a><span>10-30</span></li>
+                        <li><a href="">关于上报北京市医疗机构临床用血信息的通知</a><span>10-30</span></li>
+                        <li><a href="">北京医院输血科通过验收并获批开展“临床基…</a><span>10-30</span></li>
+                        <li><a href="">国家药品监督管理局关于修订都梁软胶囊非处…</a><span>10-30</span></li>
+                        <li><a href="">关于将多拉司琼注射剂等药品纳入本市基本医…</a><span>10-30</span></li>
+                        <li><a href="">关于调整完善本市基本医疗保险门诊特殊疾病…</a><span>10-30</span></li>
+                        <li><a href="">广东省药学会：关于印发《超药品说明书用药…</a><span>10-30</span></li>
+                        <li><a href="">人力资源社会保障部关于将36种药品纳入国家…</a><span>10-30</span></li>
                     </ul>
                 </div>
             </div>
@@ -124,30 +132,35 @@
                 <h3>医院公告</h3>
                 <ol>
                     <li>
+                        <span>01</span>
                         <dl>
                             <dt><a href="">《养生堂》</a></dt>
                             <dd><a href="">公郭立新主任 特殊时期糖尿病人的新冠…</a></dd>
                         </dl>
                     </li>
                     <li>
+                        <span>02</span>
                         <dl>
                             <dt><a href="">《养生堂》</a></dt>
                             <dd><a href="">王少为主任 新型冠状病毒防控指引十八…</a></dd>
                         </dl>
                     </li>
                     <li>
+                        <span>03</span>
                         <dl>
                             <dt><a href="">《我要当医生》</a></dt>
                             <dd><a href="">谭玲副主任 李同舟 姚晨蕊药师</a></dd>
                         </dl>
                     </li>
                     <li>
+                        <span>04</span>
                         <dl>
                             <dt><a href="">《全民健康学院》</a></dt>
                             <dd><a href="">王建业院长 “医”路有你 健康同行</a></dd>
                         </dl>
                     </li>
                     <li>
+                        <span>05</span>
                         <dl>
                             <dt><a href="">《健康北京》</a></dt>
                             <dd><a href="">王建业院长 莫把衰老当病治</a></dd>
@@ -164,9 +177,12 @@
         </aside>
         <!-- 科室介绍 -->
         <div class="dep-info">
-            <h3>科室介绍</h3>
+            <div class="dep-info-top">
+                <h3>科室介绍</h3>
+                <a href="">查看更多&gt;&gt;</a>
+            </div>
             <div class="dep-content">
-                <div>
+                <div class="dep-col">
                     <h4>内科</h4>
                     <ul>
                         <li><a href="">呼吸内科</a></li>
@@ -179,7 +195,7 @@
                         <li><a href="">內分泌科</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="dep-col">
                     <h4>肿瘤科</h4>
                     <ul>
                         <li><a href="">肿瘤内科</a></li>
@@ -191,7 +207,7 @@
                         <li><a href="">肿瘤综合科</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="dep-col">
                     <h4>外科</h4>
                     <ul>
                         <li><a href="">普通外科</a></li>
@@ -206,7 +222,7 @@
                         <li><a href="">乳腺外科</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="dep-col">
                     <h4>儿科</h4>
                     <ul>
                         <li><a href="">儿科综合</a></li>
@@ -221,8 +237,10 @@
         </div>
         <!-- 专家介绍 -->
         <div class="exp-info">
-            <h3>专家介绍</h3>
-            <a href="">查看更多</a>
+            <div class="exp-info-top">
+                <h3>专家介绍</h3>
+                <a href="">查看更多&gt;&gt;</a>
+            </div>
             <ul>
                 <li>
                     <div class="pic-box">
