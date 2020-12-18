@@ -460,10 +460,75 @@ header .main-nav ul li a:hover{
 }
 .content .exp-info ul li .word-box{
     float: right;
-    width: 223px;
+    width: 213px;
     height: 190px;
+    padding-right: 10px;
     overflow: hidden;
 }
 .content .exp-info ul li .word-box p {
     font-size: 14px;
+}
+footer {
+    height: 395px;
+    background-color: #FAFAFA;
+}
+footer .friend-links {
+    width: 1200px;
+    height: 67px;
+    padding-top: 76px;
+    margin: 0 auto;
+}
+footer .friend-links h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #333;
+}
+footer .friend-links ul {
+    overflow: hidden;
+    margin: 20px;
+}
+footer .friend-links ul li {
+    float: left;
+    width: 64px;
+    height: 21px;
+    margin-right: 100px;
+}
+footer .friend-links ul li a {
+    font-size: 16px;
+    line-height: 21px;
+    color: #333;
+}
+footer address {
+    width: 1200px;
+    height: 112px;
+    padding-top: 30px;
+    margin: 0 auto;
+    font-style: normal;
+}
+footer address h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #333;
+}
+footer address ul {
+    overflow: hidden;
+    width: 711px;
+}
+footer address ul li {
+    float: left;
+    width: 206px;
+    height: 24px;
+    font-size: 16px;
+    margin-right: 32px;
+    margin-top: 20px;
+}
+footer address ul li:nth-child(3n){
+    margin-right: 0;
+}
+footer address ul li a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
 }
