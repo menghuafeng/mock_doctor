@@ -31,10 +31,13 @@ header .header-top .logo {
 header .header-top .logo h1 {
     width: 192px;
     height: 63px;
-    line-height: 63px;
-    text-align: center;
-    color: #00978E;
-    font-family: Helvetica;
+    /*line-height: 63px;*/
+    /*text-align: center;*/
+    /*color: #00978E;*/
+    /*font-family: Helvetica;*/
+    background-image: url("../images/logo.png");
+    /* 设置段首缩进来隐藏文字 */
+    text-indent: -999px;
 }
 header .header-top .tool {
     float: right;
@@ -163,20 +166,31 @@ header .main-nav ul li a:hover{
     height: 64px;
     top: 50%;
     margin-top: -28px;
-    font-size: 50px;
-    font-family: consolas;
-    line-height: 56px;
-    text-align: center;
-    color: #FFF;
+    /*font-size: 50px;*/
+    /*font-family: consolas;*/
+    /*line-height: 56px;*/
+    /*text-align: center;*/
+    /*color: #FFF;*/
+    /*background-color: rgba(0, 0, 0, .3);*/
     border-radius: 10%;
-    font-family: consolas;
-    background-color: rgba(0, 0, 0, .3);
 }
 .banner .center .left-btn {
     left: 0;
+    background: url("../images/icons.png") no-repeat -42px -36px;
+    /*background-position: -42px -36px;*/
+}
+.banner .center .left-btn:hover {
+    cursor: pointer;
+    background-position: -160px -36px;
 }
 .banner .center .right-btn {
     right: 0;
+    background: url("../images/icons.png") no-repeat -42px -125px;
+    /*background-position: -42px -125px;*/
+}
+.banner .center .right-btn:hover {
+    cursor: pointer;
+    background-position: -160px -125px;
 }
 .banner ul {
     position: absolute;
