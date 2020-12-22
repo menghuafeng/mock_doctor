@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡和动画</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        width: 1200px;
+        overflow: hidden;
+    }
+    .main ul {
+        list-style: none;
+        width: 600px;
+        margin: 40px auto;
+    }
+    .main ul li {
+        width: 152px;
+        height: 190px;
+        margin-right: 20px;
+        float: left;
+        position: relative;
+    }
+    .main ul li image {
+        width: 152px;
+        height: 190px;
+    }
+    .main ul li span {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 152px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #FAFAFA;
+        background-color: #999999;
+        /* 透明度   */
+        opacity: 0;
+        transition: opacity 1s linear 0s;
+    }
+    .main ul li:hover span {
+        opacity: 1;
+    }
+</style>
+
+
+<body>
+    <div class="main">
+        <ul>
+            <li>
+                <img src="../images/Mask_group1.png" alt="">
+                <span>一个医生</span>
+            </li>
+            <li>
+                <img src="../images/Mask_group2.png" alt="">
+                <span>2个医生</span>
+            </li>
+            <li>
+                <img src="../images/Mask_group3.png" alt="">
+                <span>3个医生</span>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

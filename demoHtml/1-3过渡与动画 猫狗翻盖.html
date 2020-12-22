@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡和动画</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        width: 1200px;
+        overflow: hidden;
+    }
+    .main ul {
+        list-style: none;
+        width: 120px;
+        height: 500px;
+        margin: 40px auto;
+        border: 1px solid #CACACA;
+    }
+    .main ul li {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+        position: relative;
+        perspective: 500px;
+    }
+    .main ul li img {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        margin-top: -50px;
+        left: 50%;
+        margin-left: -50px;
+        border-radius: 50%;
+        border: 1px solid #015E58;
+    }
+    .main ul li img.dog {
+        transform-origin: 0 0;
+        transform: rotateY(0deg);
+        transition: transform 1s linear 0s;
+    }
+    .main ul li:hover img.dog{
+        transform: rotateY(-180deg);
+    }
+    .main ul li:nth-child(2) img.dog {
+        transform-origin: 100% 0;
+        transform: rotateY(0deg);
+        transition: transform .5s linear 0s;
+    }
+    .main ul li:nth-child(2):hover img.dog{
+        transform: rotateY(180deg);
+    }
+    .main ul li:nth-child(3) img.dog {
+        transform-origin: 0 0;
+        transform: rotateX(0deg);
+        transition: transform 2s linear 0s;
+    }
+    .main ul li:nth-child(3):hover img.dog{
+        transform: rotateX(180deg);
+    }
+    .main ul li:nth-child(4) img.dog {
+        transform-origin: 0 100%;
+        transform: rotateX(0deg);
+        transition: transform 3s linear 0s;
+    }
+    .main ul li:nth-child(4):hover img.dog{
+        transform: rotateX(-180deg);
+    }
+</style>
+
+
+<body>
+    <div class="main">
+        <ul>
+            <li>
+                <img class="cat" src="../demoImg/cat.jpg" alt="">
+                <img class="dog" src="../demoImg/dog.jpg" alt="">
+            </li>
+            <li>
+                <img class="cat" src="../demoImg/cat.jpg" alt="">
+                <img class="dog" src="../demoImg/dog.jpg" alt="">
+            </li>
+            <li>
+                <img class="cat" src="../demoImg/cat.jpg" alt="">
+                <img class="dog" src="../demoImg/dog.jpg" alt="">
+            </li>
+            <li>
+                <img class="cat" src="../demoImg/cat.jpg" alt="">
+                <img class="dog" src="../demoImg/dog.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

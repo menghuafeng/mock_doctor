@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡和动画</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        width: 1200px;
+        overflow: hidden;
+    }
+    .main ul {
+        list-style: none;
+        width: 508px;
+        height: 107px;
+        margin: 40px auto;
+        border: 1px solid #CACACA;
+    }
+    .main ul li {
+        float: left;
+        width: 107px;
+        height: 107px;
+        margin-right: 20px;
+        position: relative;
+    }
+    .main ul li::before {
+        content: "";
+        display: block;
+        width: 107px;
+        height: 107px;
+        transform: rotate(0deg);
+        transition: transform 1s ease 0s;
+    }
+    .main ul li:nth-child(1)::before {
+        background-image: url("../demoImg/a_1.png");
+    }
+    .main ul li:nth-child(2)::before {
+        background-image: url("../demoImg/a_2.png");
+    }
+    .main ul li:nth-child(3)::before {
+        background-image: url("../demoImg/a_3.png");
+    }
+    .main ul li:nth-child(4)::before {
+        background-image: url("../demoImg/a_4.png");
+    }
+    .main ul li img {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        margin-top: -30px;
+        left: 50%;
+        margin-left: -30px;
+        transform: scale(1);
+        transition: transform 1s ease-in-out 0s;
+    }
+    .main ul li:hover::before {
+        transform: rotate(360deg);
+    }
+    .main ul li:hover img{
+        transform: scale(1.5)
+    }
+</style>
+
+
+<body>
+    <div class="main">
+        <ul>
+            <li><img src="../demoImg/icon1.svg" alt=""></li>
+            <li><img src="../demoImg/icon2.svg" alt=""></li>
+            <li><img src="../demoImg/icon3.svg" alt=""></li>
+            <li><img src="../demoImg/icon4.svg" alt=""></li>
+        </ul>
+    </div>
+</body>
+
+</html>
