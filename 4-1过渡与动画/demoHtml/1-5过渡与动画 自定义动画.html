@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡和动画</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        background-color: antiquewhite;
+        animation: woqu 3s linear 0s 5 alternate;
+    }
+    @keyframes woqu {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .seven-Color {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        /*animation: changeColor 5s linear 0s infinite forwards;*/
+        animation: changeColor 5s linear 0s infinite alternate;
+    }
+    @keyframes changeColor {
+        10% {
+            background-color: red;
+        }
+        20% {
+            background-color: orange;
+        }
+        30% {
+            background-color: yellow;
+        }
+        40% {
+            background-color: green;
+        }
+        50% {
+            background-color: blue;
+        }
+        60% {
+            background-color: cyan;
+        }
+        70% {
+            background-color: purple;
+        }
+        100% {
+            background-color: black;
+        }
+    }
+    .dp {
+        width: 400px;
+        height: 600px;
+        margin: 20px auto;
+        position: relative;
+    }
+    .dp img:first-child {
+        position: absolute;
+        width: 193px;
+        height: 267px;
+        margin-top: 84px;
+        margin-left: 77px;
+    }
+    .dp img:last-child {
+        position: absolute;
+        width: 343px;
+        height: 256px;
+        margin: 0 auto;
+        animation: changeLight .5s linear 0s infinite alternate;
+    }
+    @keyframes changeLight {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 0.2;
+        }
+        40% {
+            opacity: 0.4;
+        }
+        60% {
+            opacity: 0.6;
+        }
+        80% {
+            opacity: 0.8;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .rocket {
+        width: 500px;
+        height: 500px;
+        margin: 20px auto;
+        position: relative;
+        animation: fly .5s linear 0s infinite alternate;
+    }
+    .rocket image {
+        width: 250px;
+        height: 220px;
+    }
+    @keyframes fly {
+        from {
+            transform: translateX(-50px) translateY(-50px);
+        }
+        to {
+            transform: translateX(50px) translateY(50px);
+        }
+    }
+    .rocket .line {
+        position: absolute;
+        width: 120px;
+        height: 2px;
+        background-color: #1370ca;
+        opacity: 0;
+    }
+    .rocket .n1 {
+        width: 150px;
+        top: 10px;
+        left: 10px;
+        animation: sou 1s linear 1s infinite;
+    }
+    .rocket .n2 {
+        width: 170px;
+        top: 160px;
+        left: 80px;
+        animation: sou 1s linear .5s infinite;
+    }
+    .rocket .n3 {
+        width: 100px;
+        top: 0px;
+        left: 110px;
+        animation: sou 1s linear 1.5s infinite;
+    }
+    .rocket .n4 {
+        width: 120px;
+        top: 200px;
+        left: 110px;
+        animation: sou 1s linear .2s infinite;
+    }
+    @keyframes sou {
+        0% {
+            transform: rotate(-45deg) translateX(200px);
+            opacity: 0;
+        }
+        50% {
+            transform: rotate(-45deg);
+            opacity: 1;
+        }
+        100% {
+            transform: rotate(-45deg) translateX(-200px);
+            opacity: 0;
+        }
+    }
+</style>
+<body>
+<section>
+</section>
+<div class="seven-Color">
+</div>
+<div class="dp">
+    <img src="../demoImg/dengpao.png" alt="">
+    <img src="../demoImg/guang.png" alt="">
+</div>
+<div class="rocket">
+    <img src="../demoImg/huojian.png" alt="">
+    <div class="line n1"></div>
+    <div class="line n2"></div>
+    <div class="line n3"></div>
+    <div class="line n4"></div>
+</div>
+</body>
+</html>
