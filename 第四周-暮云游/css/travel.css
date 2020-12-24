@@ -3,10 +3,194 @@
 }
 .site-head .top-bar {
     height: 32px;
-    line-height: 32px;
     background-color: #2A2A2A;
 }
-.site-head .top-bar a {
-    font-size: 12px;
+.site-head .top-bar .center-warp .shortcut-links {
+    float: left;
+}
+.site-head .top-bar .center-warp .fast-links {
+    float: right;
+}
+.site-head .top-bar .center-warp .fast-links span{
+    line-height: 32px;
+    margin-right: 16px;
     color: #FFFFFF;
+}
+.site-head .top-bar .center-warp .fast-links .contentA {
+    float: right;
+    height: 20px;
+    margin-top: 3px;
+}
+.site-head .top-bar .center-warp .fast-links .contentA a {
+    font-size: 12px;
+    /*line-height: 20px;*/
+    color: #FFFFFF;
+}
+.site-head .top-bar .center-warp .shortcut-links ul {
+}
+.site-head .top-bar .center-warp .shortcut-links > ul > li {
+    float: left;
+    /*width: 55px;*/
+    height: 32px;
+    margin-right: 18px;
+}
+.site-head .top-bar .center-warp .shortcut-links > ul > li a{
+    font-size: 12px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu {
+    padding-right: 12px;
+    position: relative;
+}
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .arrow {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+    transition: transform .2s linear 0s;
+}
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu:hover .arrow {
+    transform: rotate(180deg);
+}
+/* 两个子盒子相互旋转压盖, 获得一个箭头 */
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .arrow i{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 3px;
+    top: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .arrow b{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 3px;
+    top: 2px;
+    margin-top: -2px;
+    background-color: #2A2A2A;
+    transform: rotate(45deg);
+}
+
+/* 下拉菜单大小 */
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .menu .menu-list>li {
+    float: left;
+    width: 121px;
+    height: 14px;
+    line-height: 14px;
+    padding: 5px;
+}
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .menu .menu-list>li:last-child {
+    padding-bottom: 10px;
+}
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .menu .menu-list a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #1C1F21;
+}
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .menu .menu-list>li:hover a {
+    color: orange;
+}
+
+.site-head .mid-bar {
+    height: 40px;
+    background-color: #20BD9A;
+}
+.site-head .mid-bar .center-warp ul {
+
+}
+.site-head .mid-bar .center-warp ul li {
+    float: left;
+    height: 40px;
+    margin-right: 18px;
+}
+.site-head .mid-bar .center-warp ul li a {
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 40px;
+}
+.site-head .mid-bar .center-warp ul li.up-down-menu {
+    padding-right: 16px;
+    position: relative;
+}
+.site-head .mid-bar .center-warp ul li.up-down-menu::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    right: 0;
+    top: 50%;
+    margin-top: -3px;
+    border: 6px solid transparent;
+    border-bottom: none;
+    border-top-color: #FFFFFF;
+    transition: transform .2s linear 0s;
+}
+.site-head .mid-bar .center-warp ul li.up-down-menu:hover::after {
+    transform: rotate(180deg);
+}
+/* 下拉菜单大小 */
+.site-head .mid-bar .center-warp ul li.up-down-menu .zyx-menu{
+    width: 160px;
+    height: 72px;
+}
+.site-head .mid-bar .center-warp ul li.up-down-menu .gty-menu{
+    width: 106px;
+    height: 54px;
+}
+.site-head .mid-bar .center-warp ul li.up-down-menu .yw-menu{
+    width: 172px;
+    height: 91px;
+}
+.site-head .mid-bar .center-warp ul li.up-down-menu .sd-menu{
+    width: 118px;
+    height: 72px;
+}
+
+.site-head .botTop .center-warp .logoMenu {
+    margin: 21px auto;
+    height: 48px;
+}
+.site-head .botTop .center-warp .logoMenu h1 {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #20BD9A;
+}
+.site-head .botTop .center-warp .logoMenu .souMenu {
+    float: left;
+    width: 405px;
+    height: 30px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.site-head .botTop .center-warp .logoMenu .souMenu input {
+    float: left;
+    width: 361px;
+    height: 28px;
+    font-size: 14px;
+    padding-left: 10px;
+    border: 1px solid #20BD9A;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+.site-head .botTop .center-warp .logoMenu .souMenu a {
+    float: left;
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    background-color: #20BD9A;
+}
+.site-head .botTop .center-warp .logoMenu .souMenu a span {
+    width: 20px;
+    height: 20px;
+    line-height: 30px;
 }
