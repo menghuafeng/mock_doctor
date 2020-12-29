@@ -268,6 +268,9 @@
     box-sizing: border-box;
     border-bottom: 1px solid rgba(256, 256, 256, 0.5);
 }
+.banner .center-warp .banner-nav ul>li:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
 .banner .center-warp .banner-nav ul>li:last-child {
     border: none;
 }
@@ -300,17 +303,14 @@
     margin-left: -30px;
 }
 .banner .center-warp .banner-nav ul>li dl.hot::before {
-    position: absolute;
     background-image: url("../images/icons.png");
-    background-position: -28px -396px;
+    background-position: -28px -399px;
 }
 .banner .center-warp .banner-nav ul>li dl.hk::before {
-    position: absolute;
     background-image: url("../images/icons.png");
     background-position: -28px -216px;
 }
 .banner .center-warp .banner-nav ul>li dl.jp::before {
-    position: absolute;
     background-image: url("../images/icons.png");
     background-position: -28px -170px;
 }
@@ -325,4 +325,21 @@
 .banner .center-warp .banner-nav ul>li dl.af::before {
     background-image: url("../images/icons.png");
     background-position: -28px -304px;
+}
+/* 向右的箭头 TODO*/
+.banner .center-warp .banner-nav ul>li .arrow {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    background-color: orange;
+}
+.banner .center-warp .banner-nav .menu-box {
+    position: absolute;
+    top: 0;
+    left: 296px;
+    width: 356px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
