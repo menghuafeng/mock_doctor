@@ -1,7 +1,12 @@
+/* 第一部分 顶部菜单, 中部菜单, 搜索 */
 .site-head {
+    /* 防止用户过分的缩小网页 */
+    min-width: 1152px;
     height: 150px;
 }
 .site-head .top-bar {
+    /* 防止用户过分的缩小网页 */
+    min-width: 1152px;
     height: 32px;
     background-color: #2A2A2A;
 }
@@ -11,7 +16,7 @@
 .site-head .top-bar .center-warp .fast-links {
     float: right;
 }
-.site-head .top-bar .center-warp .fast-links span{
+.site-head .top-bar .center-warp .fast-links span {
     line-height: 32px;
     margin-right: 16px;
     color: #FFFFFF;
@@ -34,7 +39,7 @@
     height: 32px;
     margin-right: 18px;
 }
-.site-head .top-bar .center-warp .shortcut-links > ul > li a{
+.site-head .top-bar .center-warp .shortcut-links > ul > li a {
     font-size: 12px;
     line-height: 32px;
     color: #FFFFFF;
@@ -56,7 +61,7 @@
     transform: rotate(180deg);
 }
 /* 两个子盒子相互旋转压盖, 获得一个箭头 */
-.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .arrow i{
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .arrow i {
     position: absolute;
     width: 6px;
     height: 6px;
@@ -65,7 +70,7 @@
     background-color: white;
     transform: rotate(45deg);
 }
-.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .arrow b{
+.site-head .top-bar .center-warp .shortcut-links > ul > li.up-down-menu .arrow b {
     position: absolute;
     width: 6px;
     height: 6px;
@@ -108,7 +113,7 @@
     height: 40px;
     margin-right: 18px;
 }
-.site-head .mid-bar .center-warp ul li a {
+.site-head .mid-bar .center-warp ul li > a {
     font-size: 16px;
     color: #FFFFFF;
     line-height: 40px;
@@ -133,6 +138,23 @@
 }
 .site-head .mid-bar .center-warp ul li.up-down-menu:hover::after {
     transform: rotate(180deg);
+}
+/* 下拉菜单字体样式 */
+.site-head .mid-bar .center-warp ul li.up-down-menu dl {
+    margin-top: 4px;
+    margin-left: 6px;
+}
+.site-head .mid-bar .center-warp ul li.up-down-menu dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1C1F21;
+}
+.site-head .mid-bar .center-warp ul li.up-down-menu dl dd a {
+    font-size: 12px;
+    color: #1C1F21;
+}
+.site-head .mid-bar .center-warp ul li.up-down-menu dl dd a:hover {
+    color: orange;
 }
 /* 下拉菜单大小 */
 .site-head .mid-bar .center-warp ul li.up-down-menu .zyx-menu{
@@ -193,4 +215,114 @@
     width: 20px;
     height: 20px;
     line-height: 30px;
+}
+/* 第二部分 banner图 */
+.banner {
+    position: relative;
+}
+.banner .banner-img {
+    width: 100%;
+    /* 防止用户过分的缩小网页 */
+    min-width: 1152px;
+    /* 防止图片和盒子之间产生空隙   */
+    vertical-align: middle;
+}
+.banner .center-warp {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -576px;
+    width: 1152px;
+    height: 100%;
+}
+.banner .center-warp .center-btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    width: 32px;
+    height: 44px;
+    background-image: url("../images/icons.png");
+}
+.banner .center-warp .center-btn:hover {
+    opacity: 0.8;
+}
+.banner .center-warp .left-btn {
+    left: -42px;
+    background-position: -19px -94px;
+}
+.banner .center-warp .right-btn {
+    right: -42px;
+    background-position: -19px -29px;
+}
+.banner .center-warp .banner-nav {
+    height: 100%;
+}
+.banner .center-warp .banner-nav ul {
+    height: 100%;
+}
+.banner .center-warp .banner-nav ul>li {
+    position: relative;
+    width: 296px;
+    height: 16.66%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.5);
+}
+.banner .center-warp .banner-nav ul>li:last-child {
+    border: none;
+}
+.banner .center-warp .banner-nav ul>li dl {
+    position: absolute;
+    height: 48px;
+    top: 50%;
+    left: 42px;
+    margin-top: -24px;
+}
+.banner .center-warp .banner-nav ul>li dl dt{
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.banner .center-warp .banner-nav ul>li dl dd{
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+/* dl前面图标 */
+.banner .center-warp .banner-nav ul>li dl::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    margin-top: -12px;
+    left: 0;
+    margin-left: -30px;
+}
+.banner .center-warp .banner-nav ul>li dl.hot::before {
+    position: absolute;
+    background-image: url("../images/icons.png");
+    background-position: -28px -396px;
+}
+.banner .center-warp .banner-nav ul>li dl.hk::before {
+    position: absolute;
+    background-image: url("../images/icons.png");
+    background-position: -28px -216px;
+}
+.banner .center-warp .banner-nav ul>li dl.jp::before {
+    position: absolute;
+    background-image: url("../images/icons.png");
+    background-position: -28px -170px;
+}
+.banner .center-warp .banner-nav ul>li dl.as::before{
+    background-image: url("../images/icons.png");
+    background-position: -28px -260px;
+}
+.banner .center-warp .banner-nav ul>li dl.eu::before {
+    background-image: url("../images/icons.png");
+    background-position: -28px -350px;
+}
+.banner .center-warp .banner-nav ul>li dl.af::before {
+    background-image: url("../images/icons.png");
+    background-position: -28px -304px;
 }

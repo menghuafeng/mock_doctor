@@ -32,23 +32,9 @@ body {
     top: 32px;
     background-color: #FFFFFF;
     box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
-    /*display: none;*/
+    display: none;
     z-index: 999;
 }
 .site-head .up-down-menu:hover .show-menu {
     display: block;
 }
-/*.site-head .up-down-menu .menu ul.menu-list>li {*/
-/*    float: left;*/
-/*    width: 121px;*/
-/*    height: 14px;*/
-/*    padding: 5px;*/
-/*}*/
-/*.site-head .up-down-menu .menu ul.menu-list>li a {*/
-/*    font-size: 12px!important;*/
-/*    line-height: 14px!important;*/
-/*    color: #1C1F21!important;*/
-/*}*/
-/*.site-head .up-down-menu .menu ul.menu-list>li:hover a {*/
-/*    color: orange!important;*/
-/*}*/
