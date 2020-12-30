@@ -26,6 +26,29 @@ body {
     width: 1152px;
     margin: 0 auto;
 }
+.clearfix {
+    overflow: hidden;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.content-ht h2 {
+    float: left;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1C1F21;
+}
+.content-ht span {
+    position: relative;
+    top: 28px;
+    float: left;
+    font-size: 12px;
+    margin-left: 12px;
+    color: #1C1F21;
+}
 /* 共同的下拉框 */
 .site-head .up-down-menu .show-menu {
     position: absolute;

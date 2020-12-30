@@ -405,20 +405,6 @@ aside .center-warp ul li:last-child {
     height: 54px;
     clear: both;
 }
-.xxsh .center-warp .xxsh-title h2 {
-    float: left;
-    font-size: 36px;
-    font-weight: bold;
-    color: #1C1F21;
-}
-.xxsh .center-warp .xxsh-title span {
-    position: relative;
-    top: 28px;
-    float: left;
-    font-size: 12px;
-    margin-left: 12px;
-    color: #1C1F21;
-}
 .xxsh .center-warp ul {
     height: 572px;
     margin-top: 32px;
@@ -441,4 +427,139 @@ aside .center-warp ul li:last-child {
     font-size: 14px;
     margin: 20px 14px 22px;
     color: #1C1F21;
+}
+.jjzyx {
+    height: 698px;
+    margin-top: 40px;
+}
+.jjzyx .center-warp .hd {
+    height: 54px;
+}
+.jjzyx .center-warp .hd .hd-left {
+    float: left;
+}
+.jjzyx .center-warp .hd .hd-right {
+    float: right;
+}
+.jjzyx .center-warp .hd .hd-right ul {
+    height: 22px;
+    position: relative;
+    top: 10px;
+}
+.jjzyx .center-warp .hd .hd-right ul>li {
+    float: left;
+    margin-right: 16px;
+    border-bottom: 2px solid #20BD9A;
+}
+.jjzyx .center-warp .hd .hd-right ul>li:last-child {
+    margin-right: 0;
+}
+.jjzyx .center-warp .hd .hd-right ul>li a{
+    font-size: 14px;
+    color: #20BD9A;
+}
+.jjzyx .center-warp .bd ul>li {
+    float: left;
+    margin-top: 32px;
+    margin-right: 32px;
+    background-color: #FFFFFF;
+}
+.jjzyx .center-warp .bd ul>li.pro-grid {
+    width: 264px;
+    height: 270px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.jjzyx .center-warp .bd ul>li.pro-grid:hover {
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.4);
+}
+.jjzyx .center-warp .bd ul>li.big-grid {
+    width: 560px;
+    height: 270px;
+    position: relative;
+}
+.jjzyx .center-warp .bd ul>li:nth-child(3), .jjzyx .center-warp .bd ul>li:nth-child(7) {
+    margin-right: 0;
+}
+/* 第一张大图 */
+.jjzyx .center-warp .bd ul>li.big-grid .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 560px;
+    height: 103px;
+    padding: 30px 26px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+/* span的公共样式 */
+.jjzyx .center-warp .bd ul>li.pro-grid span, .jjzyx .center-warp .bd ul>li.big-grid span{
+    position: absolute;
+    left: 0;
+    width: 74px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+.jjzyx .center-warp .bd ul>li.big-grid span {
+    bottom: 103px;
+}
+.jjzyx .center-warp .bd ul>li.big-grid .info p {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.jjzyx .center-warp .bd ul>li.pro-grid a .pic-box {
+    width: 264px;
+    height: 184px;
+    position: relative;
+}
+.jjzyx .center-warp .bd ul>li.pro-grid a .pic-box span {
+    bottom: 0;
+}
+.jjzyx .center-warp .bd ul>li.pro-grid a .word-box {
+    font-size: 14px;
+    padding: 20px 14px 22px;
+    color: #1C1F21;
+}
+.jjzyx .center-warp .bd ul>li.more-grid {
+    width: 264px;
+    height: 270px;
+    background-image: linear-gradient(to bottom, #34E3BC, #15AF7A);
+    position: relative;
+}
+.jjzyx .center-warp .bd ul>li.more-grid a {
+    display: inline-block;
+    width: 236px;
+    height: 178px;
+    margin: 46px 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.jjzyx .center-warp .bd ul>li.more-grid a p {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.jjzyx .center-warp .bd ul>li.more-grid a span.iconfont{
+    position: absolute;
+    font-size: 48px;
+    top: 50%;
+    margin-top: -24px;
+    left: 50%;
+    margin-left: -24px;
+}
+.jjzyx .center-warp .bd ul>li.more-grid a ol {
+    position: absolute;
+    bottom: 46px;
+    margin-left: 8px;
+}
+.jjzyx .center-warp .bd ul>li.more-grid a ol li {
+    float: left;
+    padding: 0 10px;
+    color: #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+}
+.jjzyx .center-warp .bd ul>li.more-grid a ol li:last-child {
+    border: none;
 }
