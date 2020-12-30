@@ -326,20 +326,119 @@
     background-image: url("../images/icons.png");
     background-position: -28px -304px;
 }
-/* 向右的箭头 TODO*/
+/* 向右的箭头 */
 .banner .center-warp .banner-nav ul>li .arrow {
     position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 0;
-    left: 0;
-    background-color: orange;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    margin-top: -4px;
+    right: 12px;
+    transform: rotate(45deg);
+    background-color: transparent;
+    border: none;
+    border-right: 2px solid #FFFFFF;
+    border-top: 2px solid #FFFFFF;
 }
-.banner .center-warp .banner-nav .menu-box {
+.banner .center-warp .banner-nav .menu-box .menu{
     position: absolute;
     top: 0;
     left: 296px;
     width: 356px;
     height: 100%;
+    padding: 16px;
     background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    box-sizing: border-box;
+}
+/* 当前选中的菜单 */
+.banner .center-warp .banner-nav .menu-box .current-menu {
+    display: block;
+}
+.banner .center-warp .banner-nav .menu-box .menu dl {
+    margin-bottom: 12px;
+}
+.banner .center-warp .banner-nav .menu-box .menu dl dt {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #FFFFFF;
+}
+.banner .center-warp .banner-nav .menu-box .menu dl dd {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.banner .center-warp .banner-nav .menu-box .menu dl dd a {
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 4px;
+    color: #FFFFFF;
+}
+.banner .center-warp .banner-nav .menu-box .menu dl dd a:hover {
+    color: orange;
+}
+aside {
+    margin: 32px 0;
+}
+/* 清除浮动 */
+aside .center-warp ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+aside .center-warp ul li {
+    float: left;
+    width: 264px;
+    height: 110px;
+    margin-right: 32px;
+}
+aside .center-warp ul li:last-child {
+    margin-right: 0;
+}
+.xxsh {
+    height: 698px;
+    min-width: 1152px;
+    padding-top: 40px;
+    background-color: #F7F7F7;
+}
+.xxsh .center-warp .xxsh-title {
+    height: 54px;
+    clear: both;
+}
+.xxsh .center-warp .xxsh-title h2 {
+    float: left;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1C1F21;
+}
+.xxsh .center-warp .xxsh-title span {
+    position: relative;
+    top: 28px;
+    float: left;
+    font-size: 12px;
+    margin-left: 12px;
+    color: #1C1F21;
+}
+.xxsh .center-warp ul {
+    height: 572px;
+    margin-top: 32px;
+}
+.xxsh .center-warp ul li {
+    float: left;
+    width: 264px;
+    height: 270px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    background-color: #FFFFFF;
+}
+.xxsh .center-warp ul li:hover {
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+.xxsh .center-warp ul li:nth-child(4n) {
+    margin-right: 0;
+}
+.xxsh .center-warp ul li .word-box {
+    font-size: 14px;
+    margin: 20px 14px 22px;
+    color: #1C1F21;
 }
