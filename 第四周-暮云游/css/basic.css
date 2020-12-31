@@ -35,6 +35,7 @@ body {
     clear: both;
     overflow: hidden;
 }
+/* 顶部左侧的h2和span */
 .content-ht h2 {
     float: left;
     font-size: 36px;
@@ -49,6 +50,73 @@ body {
     margin-left: 12px;
     color: #1C1F21;
 }
+/* 顶部右侧的ul */
+.content-ht ul {
+    height: 22px;
+    position: relative;
+    top: 10px;
+}
+.content-ht li {
+    float: left;
+    margin-right: 16px;
+}
+.content-ht ul>li:last-child {
+    margin-right: 0;
+}
+.content-ht ul li a {
+    font-size: 14px;
+    color: #000000;
+}
+.content-ht ul>li a:hover {
+    color: #20BD9A;
+}
+.content-ht ul>li:hover {
+    border-bottom: 2px solid #20BD9A;
+}
+
+/* 查看更多的盒子 */
+.content-part .more-grid {
+    width: 264px;
+    height: 270px;
+    background-image: linear-gradient(to bottom, #34E3BC, #15AF7A);
+    position: relative;
+}
+.content-part .more-grid a {
+    display: block;
+    height: 270px;
+    padding-top: 46px;
+    box-sizing: border-box;
+}
+.content-part .more-grid a p {
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.content-part .more-grid a span.iconfont{
+    position: absolute;
+    font-size: 48px;
+    top: 50%;
+    margin-top: -24px;
+    left: 50%;
+    margin-left: -24px;
+}
+.content-part .more-grid a ol {
+    position: absolute;
+    bottom: 46px;
+    margin-left: 30px;
+}
+.content-part .more-grid a ol li {
+    float: left;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+}
+.content-part .more-grid a ol li:last-child {
+    border: none;
+}
+
+
 /* 共同的下拉框 */
 .site-head .up-down-menu .show-menu {
     position: absolute;
