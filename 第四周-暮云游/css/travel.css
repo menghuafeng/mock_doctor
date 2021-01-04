@@ -732,3 +732,126 @@ aside .center-warp ul li:last-child {
 .gt .center-warp .bd .content-part .more-grid a ol {
     margin-left: 60px;
 }
+footer{
+    height: 220px;
+    background-color: #F7F7F7 ;
+}
+footer .center-warp nav ul {
+    height: 28px;
+    padding-top: 36px;
+}
+footer .center-warp nav ul li {
+    float: left;
+    height: 28px;
+    padding: 0 25px;
+    border-right: 1px solid #1C1F21;
+}
+footer .center-warp nav ul li:first-child {
+    padding-left: 0;
+}
+footer .center-warp nav ul li:last-child {
+    border: none;
+}
+footer .center-warp nav ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #1C1F21;
+}
+footer .center-warp .service-info {
+    height: 76px;
+    padding-top: 40px;
+}
+footer .center-warp .service-info dl {
+    float: left;
+    width: 289px;
+    padding-left: 75px;
+    margin-right: 30px;
+    position: relative;
+}
+footer .center-warp .service-info dl:last-child {
+    margin-right: 0;
+}
+footer .center-warp .service-info dl dt {
+    font-size: 16px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    color: #1C1F21;
+}
+footer .center-warp .service-info dl dd {
+    font-size: 14px;
+    margin-top: 8px;
+    height: 22px;
+    line-height: 22px;
+    color: #1C1F21;
+}
+footer .center-warp .service-info dl::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-image: url("../images/icons.png");
+}
+footer .center-warp .service-info dl:nth-child(1)::before {
+    background-position: -150px -178px;
+}
+footer .center-warp .service-info dl:nth-child(2)::before {
+    background-position: -150px -104px;
+}
+footer .center-warp .service-info dl:nth-child(3)::before {
+    background-position: -150px -31px;
+}
+.last-footer {
+    height: 225px;
+    background-color: #1C1F21;
+}
+.last-footer .center-warp .hd-left {
+    padding-top: 48px;
+}
+.last-footer .center-warp .content-ht h2{
+    float: left;
+    height: 44px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+.last-footer .center-warp .content-ht p {
+    float: left;
+    color: #FFFFFF;
+    width: 532px;
+    height: 44px;
+    font-size: 14px;
+    padding-left: 21px;
+    line-height: 22px;
+}
+.last-footer .center-warp nav ul {
+    height: 14px;
+    padding-top: 31px;
+}
+.last-footer .center-warp nav ul li {
+    float: left;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 10px;
+    border-right: 1px solid #FFFFFF;
+}
+.last-footer .center-warp nav ul li:first-child {
+    padding-left: 0;
+}
+.last-footer .center-warp nav ul li:last-child {
+    border: none
+}
+.last-footer .center-warp nav ul li a {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.last-footer .center-warp .last-bottom {
+    padding-top: 8px;
+}
+.last-footer .center-warp .last-bottom span {
+    font-size: 14px;
+    color: #FFFFFF;
+}
