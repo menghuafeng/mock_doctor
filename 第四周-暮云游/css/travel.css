@@ -428,43 +428,43 @@ aside .center-warp ul li:last-child {
     margin: 20px 14px 22px;
     color: #1C1F21;
 }
-.jjzyx {
+.common-style {
     height: 698px;
     margin-top: 40px;
 }
-.jjzyx .center-warp .hd {
+.common-style .center-warp .hd {
     height: 54px;
 }
-.jjzyx .center-warp .hd .hd-left {
+.common-style .center-warp .hd .hd-left {
     float: left;
 }
-.jjzyx .center-warp .hd .hd-right {
+.common-style .center-warp .hd .hd-right {
     float: right;
 }
-.jjzyx .center-warp .bd ul>li {
+.common-style .center-warp .bd ul>li {
     float: left;
     margin-top: 32px;
     margin-right: 32px;
     background-color: #FFFFFF;
 }
-.jjzyx .center-warp .bd ul>li.pro-grid {
+.common-style .center-warp .bd ul>li.pro-grid {
     width: 264px;
     height: 270px;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-.jjzyx .center-warp .bd ul>li.pro-grid:hover {
+.common-style .center-warp .bd ul>li.pro-grid:hover {
     box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.4);
 }
-.jjzyx .center-warp .bd ul>li.big-grid {
+.common-style .center-warp .bd ul>li.big-grid {
     width: 560px;
     height: 270px;
     position: relative;
 }
-.jjzyx .center-warp .bd ul>li:nth-child(3), .jjzyx .center-warp .bd ul>li:nth-child(7) {
+.common-style .center-warp .bd ul>li:nth-child(3), .common-style .center-warp .bd ul>li:nth-child(7) {
     margin-right: 0;
 }
 /* 第一张大图 */
-.jjzyx .center-warp .bd ul>li.big-grid .info {
+.common-style .center-warp .bd ul>li.big-grid .info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -474,8 +474,60 @@ aside .center-warp ul li:last-child {
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.55);
 }
+/* 遮罩 */
+.common-style .center-warp .bd ul>li.big-grid .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .3s ease 0s;
+}
+.common-style .center-warp .bd ul>li.big-grid:hover .mask {
+    opacity: 0.8;
+}
+/* 圆形文字 */
+.common-style .center-warp .bd ul>li.big-grid .cicle {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    top: -108px;
+    left: 50%;
+    margin-left: -53px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50% ;
+    box-sizing: border-box;
+    padding-top: 25px;
+    font-size: 20px;
+    transition: top .3s linear 0s;
+}
+.common-style .center-warp .bd ul>li.big-grid .cicle p {
+    color: #FFFFFF;
+    text-align: center;
+}
+.common-style .center-warp .bd ul>li.big-grid:hover .cicle {
+    top: 60px;
+}
+/* 底部文字 */
+.common-style .center-warp .bd ul>li.big-grid .word {
+    position: absolute;
+    width: 508px;
+    height: 22px;
+    bottom: -22px;
+    left: 50%;
+    margin-left: -254px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    transition: bottom .3s linear 0s;
+}
+.common-style .center-warp .bd ul>li.big-grid:hover .word {
+    bottom: 32px;
+}
 /* span的公共样式 */
-.jjzyx .center-warp .bd ul>li.pro-grid span, .jjzyx .center-warp .bd ul>li.big-grid span{
+.common-style .center-warp .bd ul>li.pro-grid span, .common-style .center-warp .bd ul>li.big-grid span{
     position: absolute;
     left: 0;
     width: 74px;
@@ -486,22 +538,22 @@ aside .center-warp ul li:last-child {
     color: #FFFFFF;
     background-color: rgba(0, 0, 0, 0.55);
 }
-.jjzyx .center-warp .bd ul>li.big-grid span {
+.common-style .center-warp .bd ul>li.big-grid span {
     bottom: 103px;
 }
-.jjzyx .center-warp .bd ul>li.big-grid .info p {
+.common-style .center-warp .bd ul>li.big-grid .info p {
     font-size: 14px;
     color: #FFFFFF;
 }
-.jjzyx .center-warp .bd ul>li.pro-grid a .pic-box {
+.common-style .center-warp .bd ul>li.pro-grid a .pic-box {
     width: 264px;
     height: 184px;
     position: relative;
 }
-.jjzyx .center-warp .bd ul>li.pro-grid a .pic-box span {
+.common-style .center-warp .bd ul>li.pro-grid a .pic-box span {
     bottom: 0;
 }
-.jjzyx .center-warp .bd ul>li.pro-grid a .word-box {
+.common-style .center-warp .bd ul>li.pro-grid a .word-box {
     font-size: 14px;
     padding: 20px 14px 22px;
     color: #1C1F21;
@@ -662,4 +714,21 @@ aside .center-warp ul li:last-child {
 .tsty .center-warp .bd ul>li .pro-pic .word-box .comment {
     font-size: 12px;
     color: #000000;
+}
+/* 最世界·深度旅行 */
+.zsj {
+    height: 698px;
+    min-width: 1152px;
+    padding-top: 40px;
+    background-color: #F7F7F7;
+}
+.zsj .center-warp .bd .content-part .more-grid {
+    background-image: linear-gradient(to bottom, #BD5EE8, #832ABB);
+}
+/* 跟团游 */
+.gt .center-warp .bd .content-part .more-grid {
+    background-image: linear-gradient(to bottom, #41D8E9, #3685EA);
+}
+.gt .center-warp .bd .content-part .more-grid a ol {
+    margin-left: 60px;
 }

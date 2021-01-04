@@ -73,6 +73,16 @@ body {
 .content-ht ul>li:hover {
     border-bottom: 2px solid #20BD9A;
 }
+/* 公共的效果,鼠标放到图片上有放大效果 */
+.center-warp ul li, .center-warp ul li .pic-box, .clearfix .pic-box {
+    overflow: hidden;
+}
+.center-warp img {
+    transition: transform .4s linear 0s;
+}
+.center-warp img:hover {
+    transform: scale(1.1);
+}
 
 /* 查看更多的盒子 */
 .content-part .more-grid {
@@ -92,13 +102,24 @@ body {
     text-align: center;
     color: #FFFFFF;
 }
-.content-part .more-grid a span.iconfont{
+.content-part .more-grid a span.iconfont {
     position: absolute;
     font-size: 48px;
     top: 50%;
     margin-top: -24px;
     left: 50%;
     margin-left: -24px;
+}
+.content-part .more-grid:hover a span.iconfont {
+    animation: upDown .4s ease 0s infinite alternate;
+}
+@-webkit-keyframes upDown {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
 }
 .content-part .more-grid a ol {
     position: absolute;
