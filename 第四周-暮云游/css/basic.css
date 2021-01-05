@@ -73,14 +73,14 @@ body {
 .content-ht ul>li:hover {
     border-bottom: 2px solid #20BD9A;
 }
-/* 公共的效果,鼠标放到图片上有放大效果 */
-.center-warp ul li, .center-warp ul li .pic-box, .clearfix .pic-box {
+ /*公共的效果,鼠标放到图片上有放大效果*/
+.big-img ul li, .big-img ul li .pic-box, .clearfix .pic-box {
     overflow: hidden;
 }
-.center-warp img {
+.big-img img {
     transition: transform .4s linear 0s;
 }
-.center-warp img:hover {
+.big-img img:hover {
     transform: scale(1.1);
 }
 
