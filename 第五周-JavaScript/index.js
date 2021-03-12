@@ -313,3 +313,50 @@ document.onkeydown = function (e) {
     yd.style.top = t + 'px'
     yd.style.left = l + 'px'
 }
+// 定时器和清除定时器
+var h = document.getElementById('h')
+var btn1 = document.getElementById('btn1')
+var btn2 = document.getElementById('btn2')
+var begin = 0
+var timer
+btn1.onclick = function () {
+    // 在设置定时器之前先清除定时器
+    clearInterval(timer)
+    timer = setInterval(function () {
+        h.innerHTML = ++begin
+    }, 1000)
+}
+btn2.onclick = function () {
+    clearInterval(timer)
+}
+// 设置定时器-使箱子移动
+var box2 = document.getElementById('box2')
+var move = document.getElementById('move')
+// var left = 200
+// move.onclick = function () {
+//     setInterval(function(){
+//         left += 2
+//         box2.style.left = left + 'px'
+//     }, 20)
+// }
+
+// js+css3实现移动 -函数节流
+var position = 1
+var lock = true
+move.onclick = function () {
+    if (!lock) { return }
+    box2.style.transition = 'left .8s linear 0s'
+    if (position == 1) {
+        box2.style.left = '1100px'
+        position = 2
+    } else if (position == 2) {
+        box2.style.left = '100px'
+        position = 1
+    }
+    lock = false
+    setTimeout(function () { lock = true }, 1000)
+}
+
+// 无限滚动效果
+var enternalList = document.getElementById('enternalList')
+enternalList.innerHTML += enternalList.innerHTML
